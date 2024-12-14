@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgba(220, 220, 210, 0.9);
+}
+
+body {
+  background-color: #084c61;
+}
+
+#loginForm {
+  background-color: #E3B505;
+  height: 40vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10vh auto;
+}
+#loginForm #email,
+#loginForm #password {
+  padding: 1rem;
+  width: 80%;
+  border-radius: 0.5rem;
+  border: none;
+}
+#loginForm button {
+  height: 12.5%;
+  width: 30%;
+  background-color: #084c61;
+  border: none;
+  cursor: pointer;
+  font-size: larger;
+}
+
+#guestLoginBtn {
+  height: 3rem;
+  width: 8rem;
+  background-color: #63666A;
+  border: 2px solid black;
+  cursor: pointer;
+  font-size: larger;
+  margin-left: 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #loginForm {
+    height: 50vh;
+    width: 70%;
+    margin: 10% auto;
+  }
+}/*# sourceMappingURL=style.css.map */
