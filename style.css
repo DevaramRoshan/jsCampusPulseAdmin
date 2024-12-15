@@ -4,11 +4,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
-  color: rgba(220, 220, 210, 0.9);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 body {
   background-color: #084c61;
+}
+
+.logo {
+  margin: auto;
+  height: 20vh;
+  text-align: center;
+}
+.logo h1 {
+  color: rgba(255, 255, 255, 0.9);
 }
 
 #loginForm {
@@ -29,6 +38,7 @@ body {
   width: 80%;
   border-radius: 0.5rem;
   border: none;
+  font-weight: 500;
 }
 #loginForm button {
   height: 12.5%;
@@ -37,16 +47,7 @@ body {
   border: none;
   cursor: pointer;
   font-size: larger;
-}
-
-#guestLoginBtn {
-  height: 3rem;
-  width: 8rem;
-  background-color: #63666A;
-  border: 2px solid black;
-  cursor: pointer;
-  font-size: larger;
-  margin-left: 5rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media only screen and (max-width: 768px) {

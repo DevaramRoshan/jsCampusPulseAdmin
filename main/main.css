@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header {
+  background-color: #084c61;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo {
+  padding: 1rem;
+  flex: 1;
+}
+header .logo img {
+  height: 100px;
+  width: 100px;
+}
+header .text,
+header .adminMsg {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+header .text {
+  flex: 8;
+}
+header .adminMsg {
+  flex: 10;
+}
+
+.main {
+  display: flex;
+}
+.main aside {
+  height: 85vh;
+  background-color: #084c61;
+  width: 20%;
+}
+.main aside nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  max-height: 100%;
+  gap: 2rem;
+}
+.main aside nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: larger;
+  margin-top: 10%;
+}
+.main .iframe {
+  max-height: 85vh;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main .iframe .barChart,
+.main .iframe .pieChart {
+  height: 80%;
+  width: 30%;
+}
+.main .iframe .barChart {
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=main.css.map */
