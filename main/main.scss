@@ -68,24 +68,13 @@ header {
         }
     }
 
-    .iframe {
+    iframe {
         max-height: 85vh;
         width: 80%;
         display: flex;
         align-items: center;
         justify-content: space-around;
         flex-wrap: wrap;
-
-
-        .barChart,
-        .pieChart {
-            height: 80%;
-            width: 30%;
-        }
-
-        .barChart {
-            width: 50%;
-        }
     }
 
 }

@@ -54,21 +54,13 @@ header .adminMsg {
   font-size: larger;
   margin-top: 10%;
 }
-.main .iframe {
+.main iframe {
   max-height: 85vh;
   width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-}
-.main .iframe .barChart,
-.main .iframe .pieChart {
-  height: 80%;
-  width: 30%;
-}
-.main .iframe .barChart {
-  width: 50%;
 }
 
 @media only screen and (max-width: 768px) {

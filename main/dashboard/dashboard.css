@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.chartData {
+  display: flex;
+  justify-content: space-around;
+  margin: 20vh 0;
+}
+.chartData .barChart,
+.chartData .pieChart {
+  height: 80%;
+  width: 30%;
+}
+.chartData .barChart {
+  width: 50%;
+}/*# sourceMappingURL=dashboard.css.map */
