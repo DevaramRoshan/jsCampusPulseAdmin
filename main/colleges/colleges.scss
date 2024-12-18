@@ -23,7 +23,64 @@ $secoundary-color: #084c61;
     }
 }
 
-td {
+table {
+    border: 1px solid black;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
+
+    thead {
+        border: 1px solid black;
+
+        th {
+            border-right: 1px solid black;
+            padding: 1rem;
+        }
+    }
+
+    tbody {
+        tr {
+            border: 1px solid black;
+
+            td {
+                padding: 1.5rem;
+                border-right: 1px solid black;
+            }
+        }
+    }
+}
+
+.actionBtns {
+    background-color: #084c61;
+    margin: 0.5rem;
+    color: rgba($color: white, $alpha: 0.9);
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.updateInputs {
     padding: 1rem;
+    width: 100%;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.addCollegeBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+
+    #search {
+        padding: 1rem;
+        width: 40%;
+        border: 1px solid black;
+        border-radius: 10px;
+        outline: none;
+    }
 }

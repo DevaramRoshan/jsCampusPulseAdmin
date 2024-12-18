@@ -16,7 +16,56 @@
   font-weight: 400;
 }
 
-td {
+table {
+  border: 1px solid black;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+table thead {
+  border: 1px solid black;
+}
+table thead th {
+  border-right: 1px solid black;
   padding: 1rem;
+}
+table tbody tr {
+  border: 1px solid black;
+}
+table tbody tr td {
+  padding: 1.5rem;
+  border-right: 1px solid black;
+}
+
+.actionBtns {
+  background-color: #084c61;
+  margin: 0.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  border: none;
+  cursor: pointer;
+}
+.actionBtns:hover {
+  opacity: 0.9;
+}
+
+.updateInputs {
+  padding: 1rem;
+  width: 100%;
+  margin: 0.5rem auto;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.addCollegeBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1rem 0;
+}
+.addCollegeBox #search {
+  padding: 1rem;
+  width: 40%;
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
 }/*# sourceMappingURL=colleges.css.map */
