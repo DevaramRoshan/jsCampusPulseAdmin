@@ -72,4 +72,26 @@ table tbody tr td {
   border: 1px solid black;
   border-radius: 10px;
   outline: none;
+}
+
+@media only screen and (max-width: 768px) {
+  * {
+    font-size: 1rem;
+  }
+  html {
+    font-size: 10px;
+  }
+  table {
+    width: 60%;
+  }
+  .addSchoolBox {
+    width: 170vw;
+  }
+  .addSchoolBox h2 {
+    font-size: 1.5rem;
+  }
+  .addSchoolBox #search {
+    padding: 1rem;
+    width: 40%;
+  }
 }/*# sourceMappingURL=schools.css.map */

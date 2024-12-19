@@ -84,3 +84,30 @@ table {
         outline: none;
     }
 }
+
+@media only screen and (max-width:768px) {
+    * {
+        font-size: 1rem;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    table {
+        width: 60%;
+    }
+
+    .addCollegeBox {
+        width: 170vw;
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        #search {
+            padding: 1rem;
+            width: 40%;
+        }
+    }
+}

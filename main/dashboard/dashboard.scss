@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Unica+One&display=swap");
 
-
-$primary-color: #E3B505;
-$font-color: #63666A;
-$secoundary-color: #084c61;
-
 * {
     padding: 0;
     margin: 0;
@@ -22,9 +17,35 @@ $secoundary-color: #084c61;
     .pieChart {
         height: 80%;
         width: 30%;
+
+        >h3 {
+            text-align: center;
+        }
     }
 
     .barChart {
         width: 50%;
+    }
+}
+
+
+@media only screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .chartData {
+        flex-direction: column;
+        margin: 2vh 0;
+    }
+
+    .barChart,
+    .pieChart {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        flex-direction: column;
     }
 }
