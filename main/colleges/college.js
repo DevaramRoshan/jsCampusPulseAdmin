@@ -4,6 +4,7 @@ const updateInputList = document.getElementsByClassName("updateInputs");
 const updateForm = document.getElementById("updateForm");
 const search = document.getElementById("search");
 const addCollegeForm = document.getElementById("addCollegeForm");
+const tbody = document.createElement("tbody");
 
 async function showCollegeData() {
     const result = await fetch("https://campuspulseserver.onrender.com/colleges");
@@ -12,7 +13,6 @@ async function showCollegeData() {
 }
 
 function loadCollegesTable(arr) {
-    const tbody = document.createElement("tbody");
     arr.forEach((val) => {
         const values = Object.values(val);
         const tr = document.createElement("tr");
@@ -91,7 +91,7 @@ updateForm.addEventListener("submit", async (e) => {
     else {
         alert("error occured while updating");
     }
-})
+});
 
 async function deleteCollege(val) {
     const result = await fetch(`https://campuspulseserver.onrender.com/colleges/${val._id}`, {
@@ -120,8 +120,17 @@ addCollegeForm.addEventListener("submit", async (e) => {
     console.log(receivedData);
 })
 
-search.addEventListener("input", async () => {
-
+search.addEventListener("input", async (e) => {
+    const currVal = e.target.value;
+    const result = await fetch("https://campuspulseserver.onrender.com/colleges");
+    const resultData = await result.json();
+    tbody.innerHTML = "";
+    for (let i = 0; i < resultData.length; i++) {
+        const currCollegeName = resultData[i].collegeName;
+        if (currCollegeName.includes(currVal)) {
+            loadCollegesTable([resultData[i]]);
+        }
+    }
 })
 
 showCollegeData();

@@ -60,7 +60,11 @@ table tbody tr td {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #084c61;
+}
+.addCollegeBox h2 {
+  color: rgba(255, 255, 255, 0.9);
 }
 .addCollegeBox #search {
   padding: 1rem;
